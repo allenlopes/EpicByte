@@ -1,0 +1,59 @@
+.text-center h5 {
+ color: #03c584;
+}
+
+
+.services__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.service {
+  background: #69bbb0cb;
+  border-radius: 0 0 2rem 2rem;
+  border: 1px solid #3cf1b5;
+  height: fit-content;
+  transition: all 400ms ease;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.123);
+}
+
+.service:hover {
+  background: #a0d1cbcb;
+  border-color: #3cf1b5;
+  cursor: default;
+}
+
+.service__head {
+  background: #3cf1b5;
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.123);
+}
+
+
+.service__head h3 {
+  color: #dfdfdf;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.service__list {
+  padding: 2rem;
+}
+
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.service__list-icon {
+  color: #000000;
+  margin-top: 3px;
+}
+
+.service__list p {
+  color: #fcfcfc;
+  font-size: 1rem;
+}
