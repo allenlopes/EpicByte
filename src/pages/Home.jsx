@@ -12,10 +12,11 @@ import Testimonials from "../components/Testimonial/Testimonials";
 import Newsletter from "../components/Newsletter/Newsletter";
 import Footer from "../components/Footer/Footer";
 
+import Login from "../components/Login/Login"
 
 import Registration from "../components/Register/Register";
 
-import Login from "../components/Login/Login"
+import Book from "../components/Book-Appoint/Book"
 
 const Home = () => {
   return (
@@ -35,6 +36,7 @@ const Home = () => {
 
       <Registration />
 
+      <Book />
 
       <Footer />
 

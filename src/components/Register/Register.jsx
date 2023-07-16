@@ -45,24 +45,33 @@ function Registration() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <div className="app">
+
+    <form className="register-form" onSubmit={handleSubmit}>
+
+    <div className="title">Register</div>
+
+      <div className='input-container'>
         <label>Name:</label>
         <input type="text" value={name} onChange={handleNameChange} name="name" required />
       </div>
-      <div>
-        <label>password:</label>
-        <input type="password" value={name} onChange={handleNameChange} name="password" required />
+
+      <div className='input-container'>
+      <label>Password:</label>
+      <input type="password" value={name} onChange={handleNameChange} name="password" required />
       </div>
-      <div>
+
+      <div className='input-container'>
         <label>Phone:</label>
         <input type="tel" value={phone} onChange={handlePhoneChange} name="phone_num" required />
       </div>
-      <div>
+
+      <div className='input-container'>
         <label>Address:</label>
         <textarea value={address} onChange={handleAddressChange} name="address" required />
       </div>
-      <div>
+
+      <div className='input-container'>
         <label>Gender:</label>
         <select value={gender} onChange={handleGenderChange} name="gender" required>
           <option value="">Select gender</option>
@@ -71,7 +80,8 @@ function Registration() {
           <option value="other">Other</option>
         </select>
       </div>
-      <div>
+
+      <div className='input-container'>
         <label>Blood Group:</label>
         <select type="text" value={bloodGroup} onChange={handleBloodGroupChange} name="blood_group" required >
           <option value="A+ve">A+ve</option>
@@ -84,15 +94,19 @@ function Registration() {
           <option value="O-ve">O-ve</option>
         </select>
       </div>
-      <div>
+
+      <div className='input-container'>
         <label>Photo:</label>
         <input type="file" accept="image/png,image/jpeg" onChange={handlePhotoChange} name="face" required />
         {photo && <img src={photo} alt="uploaded" />}
       </div>
-      <div>
-        <button type="submit">Submit</button>
-      </div>
+
+      <div className="button-container">
+          <input type="submit" />
+        </div>
+
     </form>
+   </div>
   );
 }
 
